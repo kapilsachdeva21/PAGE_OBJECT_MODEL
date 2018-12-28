@@ -63,7 +63,7 @@ public class LoginPageTest extends Base {
 
         accountpage=new AccountPage();
            boolean myaccounttext=accountpage.myAccountTextDisplayed();
-           Assert.assertTrue(myaccounttext,"User login is unsuccessfull");
+           Assert.assertTrue(myaccounttext,"User login is unsuccessful");
            System.out.println("User login successful");
 
         }
