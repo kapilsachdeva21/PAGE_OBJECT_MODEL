@@ -68,8 +68,8 @@
       <file leaf-file-name="LoginPageTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../PAGE_OBJECT_MODEL/src/test/java/com/qa/testcases/LoginPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+            <state relative-caret-position="167">
+              <caret line="65" column="71" selection-start-line="65" selection-start-column="71" selection-end-line="65" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -545,7 +545,7 @@
       <workItem from="1544203071141" duration="5482000" />
       <workItem from="1544897420405" duration="28040000" />
       <workItem from="1545919084863" duration="561000" />
-      <workItem from="1545919687156" duration="12015000" />
+      <workItem from="1545919687156" duration="12209000" />
     </task>
     <servers />
   </component>
@@ -582,7 +582,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46098000" />
+    <option name="totallyTimeSpent" value="46292000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -964,8 +964,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../PAGE_OBJECT_MODEL/src/test/java/com/qa/testcases/LoginPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+        <state relative-caret-position="167">
+          <caret line="65" column="71" selection-start-line="65" selection-start-column="71" selection-end-line="65" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
