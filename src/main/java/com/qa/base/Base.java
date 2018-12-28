@@ -40,13 +40,17 @@ public class Base{
      {
          driver=new FirefoxDriver();
      }
-
-     driver.manage().window().maximize();
-     driver.manage().deleteAllCookies();
-     driver.manage().timeouts().pageLoadTimeout(20,TimeUnit.SECONDS);
-     driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-     driver.get(prop.getProperty("url"));
-
+try {
+    driver.manage().window().maximize();
+    driver.manage().deleteAllCookies();
+    driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+    driver.get(prop.getProperty("url"));
+    Thread.sleep(5000);
+}catch (InterruptedException e)
+{
+    e.fillInStackTrace();
+}
 
  }
 

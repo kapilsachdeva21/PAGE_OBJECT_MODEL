@@ -7,17 +7,30 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends Base {
 
-    //@FindBy(name="abc")
-    //WebElement anyname;
 
-    public HomePage()
-    {
+    @FindBy(xpath = "//*[@id=\"bottom-nav-menu\"]/i")
+    WebElement hamburgerbutton;
+
+    @FindBy(xpath = "//*[@id=\"ms-slidebar\"]/div/header/div[1]/a")
+    WebElement loginbutton;
+
+    public HomePage() {
         PageFactory.initElements(driver, this);
     }
 
-    public String validateHomePageTitle()
-    {
+    public String validateHomePageTitle() {
         return driver.getTitle();
+    }
+
+    public void hamburgerClick() {
+        hamburgerbutton.click();
+
+    }
+
+    public LoginPage loginButton()
+    {
+        loginbutton.click();
+        return new LoginPage();
     }
 
 }

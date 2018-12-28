@@ -1,0 +1,8 @@
+<suite name="softwaretestingmaterial">
+    <test name="testngTest">
+        <classes>
+            <class name="com.qa.testcases.HomePageTest" />
+            <class name="com.qa.testcases.LoginPageTest" />
+        </classes>
+    </test>
+</suite>
