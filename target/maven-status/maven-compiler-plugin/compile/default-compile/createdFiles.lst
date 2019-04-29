@@ -1,1 +1,7 @@
+com\qa\pages\LoginPage.class
+com\qa\pages\AccountPage.class
+com\qa\utility\ScreenshotUtility.class
+com\qa\pages\HomePage.class
 com\qa\base\Base.class
+com\qa\customlisteners\CustomListeners.class
+com\qa\utility\TestUtility.class

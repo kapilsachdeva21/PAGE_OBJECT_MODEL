@@ -10,7 +10,6 @@ public class HomePage extends Base {
 
     @FindBy(xpath = "//*[@id=\"bottom-nav-menu\"]/i")
     WebElement hamburgerbutton;
-
     @FindBy(xpath = "//*[@id=\"ms-slidebar\"]/div/header/div[1]/a")
     WebElement loginbutton;
 
@@ -24,7 +23,6 @@ public class HomePage extends Base {
 
     public void hamburgerClick() {
         hamburgerbutton.click();
-
     }
 
     public LoginPage loginButton()
