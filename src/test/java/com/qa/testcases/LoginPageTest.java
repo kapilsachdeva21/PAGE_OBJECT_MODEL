@@ -21,6 +21,7 @@ public class LoginPageTest extends Base {
     LandingPage landing_page_obj;
     LoginPage login_page_obj;
 
+
     public LoginPageTest()
     {
         super();
@@ -56,7 +57,8 @@ public class LoginPageTest extends Base {
     @Test(dataProvider = "getData",alwaysRun = true)
     public void loginValidationTest(String msisdn,String name)
     {
-        Boolean result=login_page_obj.loginValidation("msisdn","name");
+        System.out.println("Data Received from Data Provider" + msisdn +"and" + name);
+        Boolean result=login_page_obj.loginValidation(msisdn,name);
         Assert.assertTrue(result,"login Unsuccessful");
         System.out.println("Login Successful");
     }
