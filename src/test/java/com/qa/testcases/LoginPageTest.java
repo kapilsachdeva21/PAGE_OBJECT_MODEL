@@ -45,8 +45,8 @@ public class LoginPageTest extends Base {
         Assert.assertEquals(actualTitle,expectedTitle,"login page title is not matching");
     }
 
-    @DataProvider(name="getData")
-    public Object[][] getData1()
+    @DataProvider(name="getDataHutch")
+    public Object[][] getDataHutch()
     {
         ExcelUtility excel_utility_obj=new ExcelUtility();
         Object[][] data=excel_utility_obj.getExcelData();
@@ -54,12 +54,12 @@ public class LoginPageTest extends Base {
         return data;
     }
 
-    @Test(dataProvider = "getData",alwaysRun = true)
-    public void loginValidationTest(String msisdn,String name)
+    @Test(dataProvider = "getDataHutch",alwaysRun = true)
+    public void loginValidationHutchTest(String msisdn,String name)
     {
         System.out.println("Data Received from Data Provider" + msisdn +"and" + name);
-        Boolean result=login_page_obj.loginValidation(msisdn,name);
-        Assert.assertTrue(result,"login Unsuccessful");
+        Boolean result=login_page_obj.loginValidationHutch(msisdn,name);
+        Assert.assertTrue(result,"Hutch login Unsuccessful");
         System.out.println("Login Successful");
     }
 

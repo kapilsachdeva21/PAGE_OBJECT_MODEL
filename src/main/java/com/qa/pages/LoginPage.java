@@ -1,6 +1,7 @@
 package com.qa.pages;
 
 import com.qa.base.Base;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -10,12 +11,20 @@ import org.openqa.selenium.JavascriptExecutor;
 public class LoginPage extends Base {
 
 
+    WebElement selectedcountry;
+
 
     @FindBy(xpath="//*[@id=\"country-group\"]/div/div/button")
     public WebElement countrybutton;
 
     @FindBy(xpath="//*[@id=\"country-group\"]/div/div/div/ul/li[10]/a/span[1]")
-    public WebElement selectedcountry;
+    public WebElement hutch;
+
+     /******************Select Country from Country List****************/
+
+    //*[@id="country-group"]/div/div/div/ul/li[2]/a/span[1]     India
+    //*[@id="country-group"]/div/div/div/ul/li[3]/a/span[1]     Afganistan
+    //*[@id="country-group"]/div/div/div/ul/li[4]/a/span[1]     Bhamas
 
     @FindBy(xpath="//*[@id=\"phone\"]")
     public WebElement entermobilenumber;
@@ -38,7 +47,7 @@ public class LoginPage extends Base {
     }
 
 
-    public Boolean loginValidation(String msisdn,String name)
+    public Boolean loginValidationHutch(String msisdn,String name)
     {
         try {
             System.out.println("Welcome"+ name);
@@ -49,9 +58,14 @@ public class LoginPage extends Base {
         try{
             Thread.sleep(5000);
             JavascriptExecutor js = (JavascriptExecutor) driver;
-            js.executeScript("arguments[0].scrollIntoView();", selectedcountry);
-            selectedcountry.click();
-        }catch (InterruptedException e){e.getStackTrace();}
+            js.executeScript("arguments[0].scrollIntoView();", hutch);
+            try {
+                Thread.sleep(5000);
+                hutch.click();
+            }catch (InterruptedException e){
+               e.getStackTrace();
+            }
+            }catch (InterruptedException e){e.getStackTrace();}
         entermobilenumber.sendKeys(msisdn);
         try{
             Thread.sleep(5000);
@@ -68,5 +82,10 @@ public class LoginPage extends Base {
             return true;
     }
 
+
+    public void loginValidationMaxis()
+    {
+       System.out.println("Login validation for Maxis started");
+    }
 
 }
